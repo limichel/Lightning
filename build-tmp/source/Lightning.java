@@ -21,7 +21,6 @@ public void setup()
 	strokeWeight(0.5f);
 	frameRate(8);
 }
-
 public void draw()
 {
 	//rain
@@ -38,7 +37,6 @@ public void draw()
 			line(x, y, x, y+(int)(Math.random() * 10));
 		}
 	}
-
 }
 public void mousePressed()
 {

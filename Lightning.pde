@@ -21,7 +21,6 @@ void draw()
 			line(x, y, x, y+(int)(Math.random() * 10));
 		}
 	}
-
 }
 void mousePressed()
 {
