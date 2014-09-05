@@ -3,6 +3,25 @@ void setup()
 {
 	size(500,500);
 	strokeWeight(0.5);
+	frameRate(8);
+}
+void draw()
+{
+	//rain
+	background(50);
+	fill(70);
+	noStroke();
+	ellipse(150, 0, 400, 100);
+	ellipse(400, 0, 400, 100);
+	stroke(132, 172, 225, 80);
+	for(int y = 50; y<500; y = y + 30)
+	{
+		for(int x = 0; x<500; x= x + 50)
+		{
+			line(x, y, x, y+(int)(Math.random() * 10));
+		}
+	}
+
 }
 void mousePressed()
 {
@@ -19,19 +38,4 @@ void mousePressed()
 		endX = endX + (int)(Math.random() * 10 - 5);
 		endY = endY + (int)(Math.random() * 5);
 	}
-}
-void draw()
-{
-	//rain
-	frameRate(8);
-	background(50);
-	stroke(132, 172, 225, 50);
-	for(int y = 0; y<500; y = y + 20)
-	{
-		for(int x = 0; x<500; x= x + 10)
-		{
-			line(x, y, x, y+(int)(Math.random() * 10));
-		}
-	}
-
 }
