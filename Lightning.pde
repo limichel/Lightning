@@ -28,7 +28,7 @@ void mousePressed()
 	int startY = 0;
 	int endX = startX + (int)(Math.random() * 10 - 5);
 	int endY = startY + (int)(Math.random() * 5);
-	while(startX < 500)
+	while(startY < 500)
 	{
 		stroke(startX/2, 100, 150);
 		line(startX, startY, endX, endY);
